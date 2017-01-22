@@ -17,3 +17,11 @@ Create the VM and deploy App::Monport
 Destroy the VM
 
     terraform destroy
+
+TO DO
+
+- [ ] run monport
+- [ ] if diffs let me know
+- [ ] destroy the VM when done
+- [ ] if errors let me know
+- [ ] make all unattended
