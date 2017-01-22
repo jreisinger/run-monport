@@ -1,0 +1,20 @@
+- name: install deb packages
+  apt: name={{ item }} update_cache=yes cache_valid_time=3600
+  with_items:
+    - gcc
+    - make
+    - libc6-dev
+    - libexpat1-dev
+    - libssl-dev
+    - cpanminus
+    - nmap
+
+- name: install App::Monport
+  cpanm: name=App::Monport
+
+- name: upload monport cofig file
+  become: False
+  copy:
+    src: .monport.yml
+    dest: /home/ubuntu/.monport.yml
+

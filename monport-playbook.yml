@@ -1,0 +1,5 @@
+- hosts: monport
+  become: True
+
+  roles:
+    - { role: monport }
