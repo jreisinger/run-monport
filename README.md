@@ -14,13 +14,17 @@ Create the VM and deploy App::Monport
 
     terraform apply
 
+Run monport
+
+    ssh -i ~/Downloads/terraform.pem ubuntu@IP_ADDRESS 'monport -v'
+
 Destroy the VM
 
     terraform destroy
 
 TO DO
 
-- [ ] run monport
+- [x] run monport
 - [ ] if diffs let me know
 - [ ] destroy the VM when done
 - [ ] if errors let me know
