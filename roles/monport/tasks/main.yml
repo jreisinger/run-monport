@@ -18,3 +18,5 @@
     src: .monport.yml
     dest: /home/ubuntu/.monport.yml
 
+- name: run monport and send email
+  shell: monport | mail -s "monport on aws" jozef.reisinger@gmail.com
